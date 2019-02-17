@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+
+    <TextView
+        android:id="@+id/score_1"
+        style="@style/ScoreText"
+        android:layout_below="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        style="@style/TeamText"
+        android:text="@string/team_1"
+         />
+
+    <TextView
+        android:id="@+id/txtPlus"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/score_1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/plus"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/btn_plus1"
+        style="@style/PlusButtons"
+        android:onClick="plus_1"
+        android:text="@string/plus1"
+        android:layout_marginRight="100dp"
+        />
+
+    <Button
+        android:id="@+id/btn_plus2"
+        style="@style/PlusButtons"
+        android:onClick="plus_2"
+        android:layout_below="@id/btn_plus1"
+        android:text="@string/plus2"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="35dp"/>
+    <Button
+        android:id="@+id/btn_plus6"
+        style="@style/PlusButtons"
+        android:onClick="plus_6"
+        android:layout_below="@id/btn_plus2"
+        android:text="@string/plus6"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="35dp"/>
+
+    <Button
+        android:id="@+id/btn_1"
+        style="@style/MinusButtons"
+        android:onClick="minus_1"
+        android:text="@string/minus1"
+        android:layout_marginLeft="120dp"
+        />
+    <Button
+        android:id="@+id/btn_2"
+        style="@style/MinusButtons"
+        android:onClick="minus_2"
+        android:layout_below="@id/btn_1"
+        android:text="@string/minus2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="120dp"/>
+    <Button
+        android:id="@+id/btn_3"
+        style="@style/MinusButtons"
+        android:onClick="minus_6"
+        android:layout_below="@id/btn_2"
+        android:text="@string/minus6"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="120dp"/>
+
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/score_2"
+        style="@style/ScoreText"
+        android:layout_below="@+id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="71dp" />
+
+        />
+    <TextView
+        android:id="@+id/txt2"
+        style="@style/TeamText"
+        android:layout_height="39dp"
+        android:text="@string/team_2"
+        />
+
+    <TextView
+        android:id="@+id/txtMinus"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/score_2"
+        android:layout_alignEnd="@+id/txt2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+
+        android:text="@string/minus"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/btn_plus1_1"
+        style="@style/PlusButtons"
+        android:onClick="plus_1_1"
+        android:text="@string/plus1"
+        android:layout_marginRight="100dp"
+        />
+
+    <Button
+        android:id="@+id/btn_plus2_2"
+        style="@style/PlusButtons"
+        android:onClick="plus_2_2"
+        android:layout_below="@id/btn_plus1_1"
+        android:text="@string/plus2"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="35dp"/>
+    <Button
+        android:id="@+id/btn_plus6_6"
+        style="@style/PlusButtons"
+        android:onClick="plus_6_6"
+        android:layout_below="@id/btn_plus2_2"
+        android:text="@string/plus6"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="35dp"/>
+
+    <Button
+        android:id="@+id/btn_1_1"
+        style="@style/MinusButtons"
+        android:onClick="minus_1_1"
+        android:text="@string/minus1"
+        android:layout_marginLeft="120dp"
+        />
+    <Button
+        android:id="@+id/btn_2_2"
+        style="@style/MinusButtons"
+        android:onClick="minus_2_2"
+        android:layout_below="@id/btn_1_1"
+        android:text="@string/minus2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="120dp"/>
+    <Button
+        android:id="@+id/btn_3_3"
+        style="@style/MinusButtons"
+        android:onClick="minus_6_6"
+        android:layout_below="@id/btn_2_2"
+        android:text="@string/minus6"
+        android:layout_marginTop="35dp"
+       android:layout_marginLeft="120dp"/>
+</RelativeLayout>
+</LinearLayout>
